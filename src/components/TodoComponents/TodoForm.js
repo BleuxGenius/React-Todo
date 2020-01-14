@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class Todo extends React.Component {
+class TodoForm extends React.Component {
     constructor(){
         super()
         this.state = {
@@ -12,7 +12,7 @@ class Todo extends React.Component {
     this.setState({
         todoText: e.target.value
     });
-};
+
 
 handleSubmit = e => {
     e.preventDefault();
@@ -36,6 +36,6 @@ render() {
         </form>
         );
     };
-    
+};
 
 export default TodoForm;

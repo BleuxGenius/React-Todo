@@ -33,7 +33,7 @@ class App extends React.Component {
 
   toggleItem = id => {
     const list = [...this.state.list]
-    const item = this.state.find(I => I.id === id);
+    const item = this.state.list.find(I => I.id === id);
     const index = this.state.list.indexOf(item);
     item.completed = !item.completed;
     list[index] = item
